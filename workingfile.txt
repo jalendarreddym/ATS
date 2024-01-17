@@ -1,0 +1,18 @@
+first time installing 
+
+1. Creating python virtual environment using -> conda create -p venv python==3.12 -y
+
+# To activate this environment, use                                                                                                                        
+#                                                                                                                                                          
+#     $ conda activate E:\myprojects\ATS\venv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+2. run -> pip install -r requirements.txt
+3. check poppler installed or not and set vairable path example -> c:\poppler\Library\bin
+
+Second time when to run
+1. use -> conda activate venv/
+2. run -> streamlit run app.py
