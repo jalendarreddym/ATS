@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-
+import poppler.Library.bin
 load_dotenv()
 import base64
 import streamlit as st
@@ -8,6 +8,18 @@ import io
 from PIL import Image 
 import pdf2image
 import google.generativeai as genai
+
+# Specify the path to add to the PATH variable
+new_path = "/workspaces/ATS/poppler/Library/bin"
+
+# Get the current PATH variable
+current_path = os.environ.get('PATH', '')
+
+# Append the new path to the current PATH with a colon (:) as a separator
+updated_path = f"{new_path}:{current_path}"
+
+# Set the updated PATH variable
+os.environ['PATH'] = updated_path
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
