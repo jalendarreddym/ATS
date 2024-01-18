@@ -22,7 +22,7 @@ updated_path = f"{new_path}:{current_path}"
 os.environ['PATH'] = updated_path
 
 
-st.write("GOOGLE_API_KEY", st.secrets["key"])
+st.write("GOOGLE_API_KEY", st.secrets["GOOGLE_API_KEY"])
 
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
