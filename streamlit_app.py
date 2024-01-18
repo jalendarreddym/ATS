@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-import poppler.Library.bin
+from poppler.Library.bin import *
 load_dotenv()
 import base64
 import streamlit as st
