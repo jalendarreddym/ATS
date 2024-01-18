@@ -21,6 +21,10 @@ updated_path = f"{new_path}:{current_path}"
 # Set the updated PATH variable
 os.environ['PATH'] = updated_path
 
+
+st.write("GOOGLE_API_KEY", st.secrets["key"])
+
+
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(input,pdf_cotent,prompt):
